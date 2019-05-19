@@ -7,7 +7,7 @@ public class Task02 {
 
     public static void main(String[] args) {
 
-        /*DataTypesTester.testInt();
+        DataTypesTester.testInt();
         DataTypesTester.testBoolean();
         DataTypesTester.testLong();
         DataTypesTester.testDouble();
@@ -16,11 +16,7 @@ public class Task02 {
         DataTypesTester.testChar();
         DataTypesTester.testFloat();
         DataTypesTester.testString();
-        DataTypesTester.testObj();*/
-
-
-
-
+        DataTypesTester.testObj();
 
     }
 
