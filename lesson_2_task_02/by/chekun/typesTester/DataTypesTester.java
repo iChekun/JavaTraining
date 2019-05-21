@@ -286,7 +286,7 @@ public class DataTypesTester {
         // c = (boolean) l;
         // c = (boolean) f;
         // c = (boolean) d;
-           c = bool;
+        c = bool;
         System.out.println("Значение типа boolean нельзя преобразовать ни к какому типу, а также его нельзя получить ни из какого типа.");
     }
 
@@ -461,14 +461,14 @@ public class DataTypesTester {
         System.out.printf("long = short: c = %d --> c = %d\n", sh, c);
         c = ch;
         System.out.printf("long = char: c = '%c' --> c = %d\n", ch, c);
-        c =  i;
+        c = i;
         System.out.printf("long = int: c = (long)%d --> c = %d\n", i, c);
 
         c = (long) f;
         System.out.printf("long = float: c = (long)%f --> c = %d\n", f, c);
         c = (long) d;
         System.out.printf("long = double: c = (long)%f --> c = %d\n", d, c);
-       // c = (long)bool;
+        // c = (long)bool;
         System.out.printf("long = boolean: c = (long)%b --> Compile Error\n", bool);
     }
 
@@ -620,7 +620,7 @@ public class DataTypesTester {
 
         System.out.println("\n***** Arithmetical Operators *****");
         //addition
-        c = (short) (a+b);
+        c = (short) (a + b);
         System.out.printf("%d + %d = %d \n", a, b, c);
         //subtraction
         c = (short) (a - b);
@@ -639,7 +639,7 @@ public class DataTypesTester {
         c = (short) -a;
         System.out.printf("-%d = %d\n", a, c);
         // unary plus
-        c = (short)+a;
+        c = (short) +a;
         System.out.printf("+%d = %d\n", a, c);
         // prefix increment
         a = 2;
@@ -669,7 +669,7 @@ public class DataTypesTester {
         System.out.printf("%d ^ %d = %d\n", a, b, c);
         System.out.println("in binary form:");
         System.out.printf("%s ^ %s = %s\n", Integer.toBinaryString(a), Integer.toBinaryString(b), Integer.toBinaryString(c));
-        a =23;
+        a = 23;
         c = (short) ~a; // bitwise unary compliment
         System.out.printf("~%d = %d\n", a, c);
         System.out.println("in binary form:");
@@ -779,9 +779,9 @@ public class DataTypesTester {
         ///
         c = bt;
         System.out.printf("short = byte: c = %d --> c = %d\n", bt, c);
-        c = (short)i;
+        c = (short) i;
         System.out.printf("short = int: c = %d --> c = %d\n", i, c);
-        c = (short)ch;
+        c = (short) ch;
         System.out.printf("short = char: c = '%c' --> c = %d\n", ch, c);
         c = (short) l;
         System.out.printf("short = long: c = (short)%d --> c = %d\n", l, c);
@@ -841,9 +841,9 @@ public class DataTypesTester {
         c = (byte) (a & b); // bitwise AND
         System.out.printf("%d & %d = %d\n", a, b, c);
         System.out.println("in binary form:");
-        System.out.printf("%s & %s = %s\n",  Integer.toBinaryString(a & 0xFF).replace(' ','0'),
-                Integer.toBinaryString(b & 0xFF).replace(' ','0'),
-                Integer.toBinaryString(c & 0xFF).replace(' ','0'));
+        System.out.printf("%s & %s = %s\n", Integer.toBinaryString(a & 0xFF).replace(' ', '0'),
+                Integer.toBinaryString(b & 0xFF).replace(' ', '0'),
+                Integer.toBinaryString(c & 0xFF).replace(' ', '0'));
 
         c = (byte) (a | b); // bitwise OR
         System.out.printf("%d | %d = %d\n", a, b, c);
@@ -858,8 +858,8 @@ public class DataTypesTester {
         c = (byte) ~a; // bitwise unary compliment
         System.out.printf("~%d = %d\n", a, c);
         System.out.println("in binary form:");
-        System.out.printf("~%s = %8s\n",  Integer.toBinaryString(a & 0xFF),
-                Integer.toBinaryString(c & 0xFF).replace(' ','0'));
+        System.out.printf("~%s = %8s\n", Integer.toBinaryString(a & 0xFF),
+                Integer.toBinaryString(c & 0xFF).replace(' ', '0'));
         c = (byte) (a << 1); // left shift
         System.out.printf("%d << 1 = %d\n", a, c);
         System.out.println("in binary form:");
@@ -874,8 +874,8 @@ public class DataTypesTester {
         c = (byte) (a >> 1); // right shift
         System.out.printf("%d >> 1 = %d\n", a, c);
         System.out.println("in binary form:");
-        System.out.printf("%s >> 1 = %s\n", Integer.toBinaryString(a & 0xFF).replace(' ','0'),
-                Integer.toBinaryString(c & 0xFF).replace(' ','0'));
+        System.out.printf("%s >> 1 = %s\n", Integer.toBinaryString(a & 0xFF).replace(' ', '0'),
+                Integer.toBinaryString(c & 0xFF).replace(' ', '0'));
 
         a = 5;
         c = (byte) (a >>> 1); // zero fill right shift
@@ -887,8 +887,8 @@ public class DataTypesTester {
         c = (byte) (a >>> 1); // zero fill right shift
         System.out.printf("%d >>> 1 = %d\n", a, c);
         System.out.println("in binary form:");
-        System.out.printf("%s >>> 1 = %s\n", Integer.toBinaryString(a & 0xFF).replace(' ','0'),
-                Integer.toBinaryString(c & 0xFF).replace(' ','0'));
+        System.out.printf("%s >>> 1 = %s\n", Integer.toBinaryString(a & 0xFF).replace(' ', '0'),
+                Integer.toBinaryString(c & 0xFF).replace(' ', '0'));
 
         System.out.println("\n***** Assignment Operators *****");
 
@@ -964,11 +964,11 @@ public class DataTypesTester {
         float f = 1.9f;
         double d = 123456789.625;
         boolean bool = true;
-        c = (byte)i;
+        c = (byte) i;
         System.out.printf("byte = int: c = %d --> c = %d\n", i, c);
-        c =(byte) sh;
+        c = (byte) sh;
         System.out.printf("byte = short: c = %d --> c = %d\n", sh, c);
-        c = (byte)ch;
+        c = (byte) ch;
         System.out.printf("byte = char: c = '%c' --> c = %d\n", ch, c);
         c = (byte) l;
         System.out.printf("byte = long: c = (byte)%d --> c = %d\n", l, c);
@@ -1023,11 +1023,12 @@ public class DataTypesTester {
         System.out.printf("%c-- = %c\n", a, a--);
 
         System.out.println("\n***** Bitwise Operators *****");
-        a = 'a'; b='b';
+        a = 'a';
+        b = 'b';
         c = (char) (a & b); // bitwise AND
         System.out.printf("%c & %c = %c\n", a, b, c);
         System.out.println("in binary form:");
-        System.out.printf("%s & %s = %s\n", Integer.toBinaryString(a), Integer.toBinaryString(b & 0xFF).replace(' ','0'), Integer.toBinaryString(c));
+        System.out.printf("%s & %s = %s\n", Integer.toBinaryString(a), Integer.toBinaryString(b & 0xFF).replace(' ', '0'), Integer.toBinaryString(c));
         //Integer.toBinaryString(b & 0xFF).replace(' ','0'),
         c = (char) (a | b); // bitwise OR
         System.out.printf("%c | %c = %c\n", a, b, c);
@@ -1042,7 +1043,7 @@ public class DataTypesTester {
         c = (char) ~a; // bitwise unary compliment
         System.out.printf("~%c = %c\n", a, c);
         System.out.println("in binary form:");
-        System.out.printf("~%s = %s\n", Integer.toBinaryString(a), Integer.toBinaryString(c & 0xFF).replace(' ','0'));
+        System.out.printf("~%s = %s\n", Integer.toBinaryString(a), Integer.toBinaryString(c & 0xFF).replace(' ', '0'));
 
         c = (char) (a << 1); // left shift
         System.out.printf("%c << 1 = %c\n", a, c);
@@ -1084,7 +1085,7 @@ public class DataTypesTester {
         System.out.printf("%c |= %c --> c = %c\n", c, a, c |= a);
         System.out.printf("%c &= %c --> c = %c\n", c, a, c &= a);
         System.out.printf("%c ^= %c --> c = %c\n", c, a, c ^= a);
-        c='a'; // for next operations i will use 'a' that mean 97
+        c = 'a'; // for next operations i will use 'a' that mean 97
         System.out.printf("%c >>= 1 --> c = %c\n", c, c >>= 1);
         System.out.printf("%c <<= 1 --> c = %c\n", c, c <<= 1);
         System.out.printf("%c >>>= 1 --> c = %c\n", c, c >>>= 1);
@@ -1144,7 +1145,7 @@ public class DataTypesTester {
         float f = 98.34f;
         double d = 123456789.625;
         boolean bool = true;
-        c = (char)bt;
+        c = (char) bt;
         System.out.printf("char = byte: c = %d --> c = %c\n", bt, c);
         c = (char) sh;
         System.out.printf("char = short: c = %d --> c = %c\n", sh, c);
@@ -1302,7 +1303,7 @@ public class DataTypesTester {
         System.out.printf("float = boolean: c = (float)%b --> Compile Error\n", bool);
     }
 
-    public static void testString(){
+    public static void testString() {
 
         String a = "1";
         String b = "2";
@@ -1316,12 +1317,15 @@ public class DataTypesTester {
         System.out.println("\nArithmetical Operators: ");
         c = a + b;
         System.out.println("Слияние двух строк: " + a + " + " + b + ".\nПолучили: " + c);
+        System.out.println("\n Оператор +=: " + a + " + " + b);
+        a += b;
+        System.out.println("Получили: " + a);
 
         a = "3"; //изменить нельзя ,поэтому создается новый объект
         c = "3";
 
         //  System.out.println("Строка после изменения: " + a);
-        System.out.println("Сравнение двух строк a = " + a + " , c = "+ c + ".");
+        System.out.println("\nСравнение двух строк a = " + a + " , c = " + c + ".");
         System.out.println("a.equals(c) -->  " + a.equals(c));
         System.out.println("\nОператоры != и == для сравнения строк: ");
 
@@ -1358,9 +1362,9 @@ public class DataTypesTester {
 
     }
 
-    public static void testObj(){
-        Student student = new Student("Ilya",93);
-        Student student1= null;
+    public static void testObj() {
+        Student student = new Student("Ilya", 93);
+        Student student1 = null;
 
         System.out.println("\n***Object***\n");
 
@@ -1370,16 +1374,16 @@ public class DataTypesTester {
 
         System.out.println("\n***Instanceof***\n");
 
-        System.out.println("Is student instanceof Student ? ---> " + (student instanceof  Student));
+        System.out.println("Is student instanceof Student ? ---> " + (student instanceof Student));
 
-        System.out.println("\nIs student == student1> ? --->  "+ (student == student1));
+        System.out.println("\nIs student == student1> ? --->  " + (student == student1));
         System.out.println("Да, тк ссылки указывают на один и тот же объект");
 
-        Student student2 = new Student("Ilya",93);
-        System.out.println("\nIs student equals student2> ? --->  "+ student.equals(student2));
+        Student student2 = new Student("Ilya", 93);
+        System.out.println("\nIs student equals student2> ? --->  " + student.equals(student2));
 
-        student1=null;
-        System.out.println("\nIs student  not equals student1> ? --->  "+ student.equals(student1));
+        student1 = null;
+        System.out.println("\nIs student  not equals student1> ? --->  " + student.equals(student1));
     }
 
 }

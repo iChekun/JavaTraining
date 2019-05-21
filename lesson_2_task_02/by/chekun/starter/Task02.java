@@ -3,6 +3,8 @@ package by.chekun.starter;
 
 import by.chekun.typesTester.DataTypesTester;
 
+import java.math.BigDecimal;
+
 public class Task02 {
 
     public static void main(String[] args) {
@@ -17,7 +19,6 @@ public class Task02 {
         DataTypesTester.testFloat();
         DataTypesTester.testString();
         DataTypesTester.testObj();
-
     }
 
 }
