@@ -1,27 +1,27 @@
 package by.chekun.starter;
 
-import by.chekun.action.circleAction.CircleLogic;
-import by.chekun.action.ringAction.RingLogic;
+import by.chekun.action.CircleLogic;
+import by.chekun.action.RingLogic;
 import by.chekun.printer.Printer;
 
 /**
- * На плоскости даны два круга с общим центром и радиусами R1 и R2 (R1 > R2).
- * Разработайте программу нахождения площади кольца,
- * внешний радиус которого равен R1,  а внутренний радиус равен R2.
+ * On the plane are two circles with a common center and radius of R1 and R2.
+ * Develop program for finding the area of the ring, the outer * radius of this is R1 ,
+ * and inner radius - R2
  */
 
 public class Starter {
 
     public static void main(String[] argc) {
-        double R1 = 10;
-        double R2 = 5;
+        double outerCircleRadius = 10;
+        double innerCircleRadius = 5;
 
-        double firstCircleSquare = CircleLogic.calculateCircleSquare(R1);
-        double secondCircleSquare = CircleLogic.calculateCircleSquare(R2);
+        double firstCircleSquare = CircleLogic.calculateCircleSquare(outerCircleRadius);
+        double secondCircleSquare = CircleLogic.calculateCircleSquare(innerCircleRadius);
         double ringSquare = RingLogic.calculateRingSquare(firstCircleSquare, secondCircleSquare);
 
-        Printer.println("Площадь внешнего круга: " + firstCircleSquare +
-                "\nПлощадь внутреннего круга: " + secondCircleSquare +
-                "\nПлощадь кольца: " + ringSquare);
+        Printer.println("Square of outer circle: " + firstCircleSquare +
+                "\nSquare of inner circle: " + secondCircleSquare +
+                "\nRing square: " + ringSquare);
     }
 }

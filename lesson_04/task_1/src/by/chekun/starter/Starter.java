@@ -5,9 +5,8 @@ import by.chekun.action.CheckNumbersAction;
 import by.chekun.printer.Printer;
 
 /**
- * Разработайте программу, которая проверяет, что числа a, b и c различны (одинаковы)
+ * Develop a program that check three (a, b, c) number on equaling (not equaling)
  */
-
 
 public class Starter {
 
@@ -16,9 +15,8 @@ public class Starter {
         double b = 1;
         double c = 3.45;
 
-        String info = CheckNumbersAction.checkNumbers(a, b, c);
-
-        Printer.print(info);
+        String info = CheckNumbersAction.checkEqualsToString(a, b, c);
+        Printer.println(info);
 
         a = 2;
         b = 2;
