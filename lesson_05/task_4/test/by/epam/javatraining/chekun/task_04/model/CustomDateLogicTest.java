@@ -13,8 +13,8 @@ public class CustomDateLogicTest {
     @Test
     public void getNextDayDate_correctArguments_true_LeapYear() throws WrongArgumentsException {
 
-        CustomDate customDate = new CustomDate(2, 2, 2008);
-        CustomDate expected = CustomDateLogic.getNextDayDate(new CustomDate(1, 2, 2008));
+        CustomDate customDate = new CustomDate(27, 12, 2000);
+        CustomDate expected = CustomDateLogic.getNextDayDate(new CustomDate(26, 12, 2000));
 
         assertEquals(expected, customDate);
     }
@@ -31,8 +31,8 @@ public class CustomDateLogicTest {
     @Test
     public void getNextDayDate_correctArguments_true_NotLeapYear() throws WrongArgumentsException {
 
-        CustomDate customDate = new CustomDate(2, 2, 2007);
-        CustomDate expected = CustomDateLogic.getNextDayDate(new CustomDate(1, 2, 2007));
+        CustomDate customDate = new CustomDate(1, 6, 2006);
+        CustomDate expected = CustomDateLogic.getNextDayDate(new CustomDate(31, 5, 2006));
 
         assertEquals(expected, customDate);
     }
@@ -69,8 +69,8 @@ public class CustomDateLogicTest {
     @Test
     public void getNextDayDate_correctArguments_true() throws WrongArgumentsException {
 
-        CustomDate customDate = new CustomDate(2, 2, 2019);
-        CustomDate expected = CustomDateLogic.getNextDayDate(new CustomDate(1, 2, 2019));
+        CustomDate customDate = new CustomDate(21, 2, 2011);
+        CustomDate expected = CustomDateLogic.getNextDayDate(new CustomDate(20, 2, 2011));
 
         assertEquals(expected, customDate);
     }

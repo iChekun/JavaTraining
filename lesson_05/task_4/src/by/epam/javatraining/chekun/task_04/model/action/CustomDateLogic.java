@@ -64,7 +64,7 @@ public class CustomDateLogic {
 
     private static void checkingLeapYearDate() {
         day += 1;
-        if (month == FEBRUARY && day > 29) {
+        if (month == FEBRUARY && day > MAX_DAYS_IN_FEBRUARY_LEAP_YEAR) {
             day = 1;
             checkingMonthNumber();
         } else if ((month == APRIL || month == JUNE || month == SEPTEMBER || month == NOVEMBER) && day > 30
@@ -76,7 +76,7 @@ public class CustomDateLogic {
 
     private static void checkingNotLeapYearDate() {
         day += 1;
-        if (month == FEBRUARY && day > 28) {
+        if (month == FEBRUARY && day > MAX_DAYS_IN_FEBRUARY_NOT_LEAP_YEAR) {
             day = 1;
             checkingMonthNumber();
         } else if ((month == APRIL || month == JUNE || month == SEPTEMBER || month == NOVEMBER) && day > 30
