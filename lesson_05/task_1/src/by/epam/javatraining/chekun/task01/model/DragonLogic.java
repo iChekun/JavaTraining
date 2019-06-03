@@ -5,33 +5,33 @@ public class DragonLogic {
 
     private static int INVALID_DATA = -1;
     private static int COUNT_OF_EYES = 2;
-    private static int TWO_HUNDREDS_YEARS = 200;
-    private static int THREE_HUNDREDS_YEARS = 300;
+    private static int SECOND_LIFE_PERIOD = 200;
+    private static int THIRD_LIFE_PERIOD = 300;
     private static int ZERO_YEARS = 0;
     private static int NUMBER_HEADS_AT_BIRTH = 3;
-    private static int NUMBER_HEADS_UP_TO_TWO_HUNDREDS_YEARS = 200;
-    private static int NUMBER_HEADS_UP_TO_THREE_HUNDREDS_YEARS = 500;
-    private static int NUMBER_HEADS_EVERY_YEAR_BEFORE_TWO_HUNDREDS = 3;
-    private static int NUMBER_HEADS_EVERY_YEAR_BEFORE_THREE_HUNDREDS = 2;
+    private static int NUMBER_HEADS_UP_TO_TWO_SECOND_LIFE_PERIOD = 200;
+    private static int NUMBER_HEADS_UP_TO_THIRD_FILE_PERIOD = 500;
+    private static int NUMBER_HEADS_EVERY_YEAR_BEFORE_SECOND_LIFE_PERIOD = 3;
+    private static int NUMBER_HEADS_EVERY_YEAR_BEFORE_THIRD_LIFE_PERIOD = 2;
 
 
     public static int calculateCountOfDragonHeads(int dragonAge) {
 
         if (dragonAge >= ZERO_YEARS) {
 
-            if (dragonAge < TWO_HUNDREDS_YEARS) {
+            if (dragonAge < SECOND_LIFE_PERIOD) {
 
-                return NUMBER_HEADS_EVERY_YEAR_BEFORE_TWO_HUNDREDS * dragonAge
+                return NUMBER_HEADS_EVERY_YEAR_BEFORE_SECOND_LIFE_PERIOD * dragonAge
                         + NUMBER_HEADS_AT_BIRTH;
 
-            } else if (dragonAge >= TWO_HUNDREDS_YEARS
-                    && dragonAge < THREE_HUNDREDS_YEARS) {
+            } else if (dragonAge >= SECOND_LIFE_PERIOD
+                    && dragonAge < THIRD_LIFE_PERIOD) {
 
-                return NUMBER_HEADS_AT_BIRTH + NUMBER_HEADS_UP_TO_TWO_HUNDREDS_YEARS
-                        + dragonAge * NUMBER_HEADS_EVERY_YEAR_BEFORE_THREE_HUNDREDS;
+                return NUMBER_HEADS_AT_BIRTH + NUMBER_HEADS_UP_TO_TWO_SECOND_LIFE_PERIOD
+                        + dragonAge * NUMBER_HEADS_EVERY_YEAR_BEFORE_THIRD_LIFE_PERIOD;
 
             } else {
-                return NUMBER_HEADS_AT_BIRTH + NUMBER_HEADS_UP_TO_THREE_HUNDREDS_YEARS + dragonAge;
+                return NUMBER_HEADS_AT_BIRTH + NUMBER_HEADS_UP_TO_THIRD_FILE_PERIOD + dragonAge;
             }
 
         } else {
