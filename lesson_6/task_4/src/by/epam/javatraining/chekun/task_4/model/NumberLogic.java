@@ -3,7 +3,7 @@ package by.epam.javatraining.chekun.task_4.model;
 
 public class NumberLogic {
 
-    public static boolean isNumeralsEven(int number) {
+    public static boolean isAllNumeralsEvenOrOdd(int number) {
         boolean flag = false;
 
         if (number >= 10) {

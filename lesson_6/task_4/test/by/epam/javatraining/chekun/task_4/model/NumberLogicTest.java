@@ -11,35 +11,35 @@ public class NumberLogicTest {
     public void isNumeralsEven_correctParameters_true() {
         int number = 2468;
 
-        assertTrue(NumberLogic.isNumeralsEven(number));
+        assertTrue(NumberLogic.isAllNumeralsEvenOrOdd(number));
     }
 
     @Test
     public void isNumeralsEven_correctParameters2_true() {
         int number = 1579;
 
-        assertTrue(NumberLogic.isNumeralsEven(number));
+        assertTrue(NumberLogic.isAllNumeralsEvenOrOdd(number));
     }
 
     @Test
     public void isNumeralsEven_correctParameters_false() {
         int number = 12572;
 
-        assertFalse(NumberLogic.isNumeralsEven(number));
+        assertFalse(NumberLogic.isAllNumeralsEvenOrOdd(number));
     }
 
     @Test
     public void isNumeralsEven_wrongParameters_false() {
         int number = -1;
 
-        assertFalse(NumberLogic.isNumeralsEven(number));
+        assertFalse(NumberLogic.isAllNumeralsEvenOrOdd(number));
     }
 
     @Test
     public void isNumeralsEven_wrongParameters2_false() {
         int number = 6;
 
-        assertFalse(NumberLogic.isNumeralsEven(number));
+        assertFalse(NumberLogic.isAllNumeralsEvenOrOdd(number));
     }
 
 

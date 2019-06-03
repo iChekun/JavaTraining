@@ -9,9 +9,9 @@ public class Main {
 
         int number = 1579;
         Printer.print("are all numerals even or odd in the " + number + " ?-> "
-                + NumberLogic.isNumeralsEven(number));
+                + NumberLogic.isAllNumeralsEvenOrOdd(number));
         number = 2468;
         Printer.print("are all numerals even or odd in the " + number + " ?-> "
-                + NumberLogic.isNumeralsEven(number));
+                + NumberLogic.isAllNumeralsEvenOrOdd(number));
     }
 }
