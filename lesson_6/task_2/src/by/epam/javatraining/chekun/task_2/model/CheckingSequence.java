@@ -14,10 +14,10 @@ public class CheckingSequence {
 
 
     public static boolean isSequenceGrowing(int number) {
-
-        boolean flag = true;
+        boolean flag = false;
 
         if (number > 10) {
+            flag = true;
 
             while (number / 10 != 0) {
 
@@ -31,32 +31,29 @@ public class CheckingSequence {
                     break;
                 }
             }
-        } else {
-            flag = false;
         }
         return flag;
     }
 
     public static boolean isSequenceDecreases(int number) {
-
-        boolean flag = true;
+        boolean flag = false;
 
         if (number > 10) {
-
+            flag = true;
             while (number / 10 != 0) {
 
                 int currentNumeral = number % 10;
-                int previousNumeral = (number /= 10) % 10;
+                int previousNumeral = (number / 10) % 10;
 
-                if (previousNumeral < currentNumeral) {
+                if (previousNumeral > currentNumeral) {
+                    number /= 10;
+                } else {
                     flag = false;
                     break;
                 }
             }
-        } else {
-            flag = false;
         }
         return flag;
     }
-
 }
+

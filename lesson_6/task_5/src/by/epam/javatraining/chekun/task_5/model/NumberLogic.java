@@ -4,9 +4,10 @@ public class NumberLogic {
 
 
     public static boolean isSimpleNumber(int number) {
+        boolean flag = false;
 
         if (number > 1) {
-            boolean flag = true;
+            flag = true;
 
             for (int i = 2; i < number; i++) {
                 if (number % i == 0) {
@@ -14,9 +15,8 @@ public class NumberLogic {
                     break;
                 }
             }
-            return flag;
-        } else {
-            return false;
         }
+
+        return flag;
     }
 }

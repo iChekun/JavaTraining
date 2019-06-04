@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] argc) {
 
-        int number = 1579;
+        int number = 1579792797;
         Printer.print("are all numerals even or odd in the " + number + " ?-> "
                 + NumberLogic.isAllNumeralsEvenOrOdd(number));
         number = 2468;

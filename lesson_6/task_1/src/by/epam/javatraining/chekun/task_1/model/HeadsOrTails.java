@@ -5,8 +5,8 @@ import java.util.Random;
 
 public class HeadsOrTails {
     private static final int WRONG_PARAMETERS = -1;
-
     private static final int COIN_SIDES = 2;
+
     private static int tailsCount = 0;
 
 

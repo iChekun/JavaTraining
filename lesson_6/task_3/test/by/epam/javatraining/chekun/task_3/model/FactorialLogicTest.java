@@ -57,7 +57,7 @@ public class FactorialLogicTest {
     public void getFactorial_long_badParams_true() {
 
         int number = -1;
-        int expected = -1;
+        int expected = 1;
 
         assertEquals(expected, FactorialLogic.getFactorial_long(number));
     }

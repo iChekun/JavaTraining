@@ -6,25 +6,24 @@ public class NumberLogic {
     public static boolean isAllNumeralsEvenOrOdd(int number) {
         boolean flag = false;
 
-        if (number >= 10) {
+        if (number > 10) {
+
             while (number / 10 > 0) {
 
                 int currentNumeral = number % 10;
-                int previousNumeral = (number / 10) % 10;
+                int previousNumeral = (number /= 10) % 10;
 
-                if ((currentNumeral % 2 == 0 && previousNumeral % 2 == 0) //is even?
-                        || (currentNumeral % 2 != 0 && previousNumeral % 2 != 0)) { // is not even?
+                if (currentNumeral % 2 == 0 && previousNumeral % 2 == 0 //is even current and previous?
+                        || currentNumeral % 2 != 0 && previousNumeral % 2 != 0) { // or is not even?
                     flag = true;
-                    number /= 10;
                 } else {
                     flag = false;
                     break;
                 }
             }
-            return flag;
-        } else {
-            return flag;
         }
+
+        return flag;
     }
 
 }

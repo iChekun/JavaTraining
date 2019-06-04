@@ -22,6 +22,20 @@ public class NumberLogicTest {
     }
 
     @Test
+    public void isNumeralsEven_correctParameters0_false() {
+        int number = 24586;
+
+        assertFalse(NumberLogic.isAllNumeralsEvenOrOdd(number));
+    }
+
+    @Test
+    public void isNumeralsEven_correctParameters1_false() {
+        int number = 1579792797;
+
+        assertFalse(NumberLogic.isAllNumeralsEvenOrOdd(number));
+    }
+
+    @Test
     public void isNumeralsEven_correctParameters_false() {
         int number = 12572;
 
