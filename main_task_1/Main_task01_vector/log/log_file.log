@@ -1,25 +1,43 @@
-2019-06-10 01:13:10 INFO  VectorLogicTest:22 - VectorLogicTest started!
-2019-06-10 01:13:10 ERROR VectorLogic:157 - Method isArraySortedByAscending() received wrong parameters (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:578 - Method quickSort() receive wrong parameters! (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:250 - Method findLocalMaxPosition() received wrong parameters (array == null or array.length==0)
-2019-06-10 01:13:10 ERROR VectorLogic:220 - Method findLocalMinPosition() received wrong parameters(array==null or array.length=0)
-2019-06-10 01:13:10 ERROR VectorLogic:105 - Method calculateArithmeticAverageValue() received wrong parameters!(array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:306 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
-2019-06-10 01:13:10 ERROR VectorLogic:279 - Method findValuePositionLinearSearch() received wrong parameters (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:131 - Method calculateGeometricAverageValue() received wrong parameters (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:79 - Method findMinValue() received wrong parameters! (array == null or array.length==0)
-2019-06-10 01:13:10 ERROR VectorLogic:183 - Method isArraySorted() received wrong parameters (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:342 - Method getReverseArray() receive wrong parameters! (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:515 - Method sortMerge() receive wrong parameters! (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:445 - Method insertionSort() receive wrong parameters! (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:79 - Method findMinValue() received wrong parameters! (array == null or array.length==0)
-2019-06-10 01:13:10 ERROR VectorLogic:55 - Method findMaxValue() received wrong parameters! (array == null or array.length==0)
-2019-06-10 01:13:10 ERROR VectorLogic:306 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
-2019-06-10 01:13:10 ERROR VectorLogic:478 - Method selectionSort() receive wrong parameters! (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:399 - Method shakerSort() receive wrong parameters! (array == null)
-2019-06-10 01:13:10 ERROR VectorLogic:250 - Method findLocalMaxPosition() received wrong parameters (array == null or array.length==0)
-2019-06-10 01:13:10 ERROR VectorLogic:55 - Method findMaxValue() received wrong parameters! (array == null or array.length==0)
-2019-06-10 01:13:10 ERROR VectorLogic:220 - Method findLocalMinPosition() received wrong parameters(array==null or array.length=0)
-2019-06-10 01:13:10 ERROR VectorLogic:306 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
-2019-06-10 01:13:10 ERROR VectorLogic:369 - Method bubbleSort() receive wrong parameters! (array == null)
-2019-06-10 01:13:10 INFO  VectorLogicTest:686 - VectorLogicTest finished!
+2019-06-13 00:36:22 INFO  Main:20 - Create and initialize array
+2019-06-13 00:36:22 INFO  Main:26 - Start array: [9.0, 10.0, 22.0, 0.0, 7.0, 5.0, 43.0, 14.0, 41.0, 24.0]
+2019-06-13 00:36:22 INFO  Main:29 - MAX value: 43.0
+2019-06-13 00:36:22 INFO  Main:35 - MIN value: 0.0
+2019-06-13 00:36:22 INFO  Main:42 - Arithmetic Average Value is: 17.5
+2019-06-13 00:36:22 INFO  Main:48 - Geometric Average Value is: 0.0
+2019-06-13 00:36:22 INFO  Main:54 - Local min position is: 0
+2019-06-13 00:36:22 INFO  Main:60 - Local max position is: 2
+2019-06-13 00:36:22 INFO  Main:67 - (linearSearch) Find value = 2.0 position: -1
+2019-06-13 00:36:22 WARN  VectorLogic:309 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
+2019-06-13 00:36:22 ERROR Main:79 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
+2019-06-13 00:36:22 INFO  Main:87 - Reversed array: [24.0, 41.0, 14.0, 43.0, 5.0, 7.0, 0.0, 22.0, 10.0, 9.0]
+2019-06-13 00:36:22 INFO  Main:96 - (bubbleSort) Array: [0.0, 5.0, 7.0, 9.0, 10.0, 14.0, 22.0, 24.0, 41.0, 43.0]
+2019-06-13 00:36:22 INFO  Main:105 - (shakerSort) Array: [0.0, 5.0, 7.0, 9.0, 10.0, 14.0, 22.0, 24.0, 41.0, 43.0]
+2019-06-13 00:36:22 INFO  Main:114 - (insertionSort) Array: [0.0, 5.0, 7.0, 9.0, 10.0, 14.0, 22.0, 24.0, 41.0, 43.0]
+2019-06-13 00:36:22 INFO  Main:123 - (selectionSort) Array: [0.0, 5.0, 7.0, 9.0, 10.0, 14.0, 22.0, 24.0, 41.0, 43.0]
+2019-06-13 00:36:22 INFO  Main:132 - (sortMerge) Array: [0.0, 5.0, 7.0, 9.0, 10.0, 14.0, 22.0, 24.0, 41.0, 43.0]
+2019-06-13 00:36:22 INFO  Main:142 - (quickSort) Array: [0.0, 5.0, 7.0, 9.0, 10.0, 14.0, 22.0, 24.0, 41.0, 43.0]
+2019-06-13 00:36:31 INFO  VectorLogicTest:22 - VectorLogicTest started!
+2019-06-13 00:36:31 WARN  VectorLogic:160 - Method isArraySortedByAscending() received wrong parameters (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:589 - Method quickSort() receive wrong parameters! (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:253 - Method findLocalMaxPosition() received wrong parameters (array == null or array.length==0)
+2019-06-13 00:36:31 WARN  VectorLogic:224 - Method findLocalMinPosition() received wrong parameters(array==null or array.length=0)
+2019-06-13 00:36:31 WARN  VectorLogic:106 - Method calculateArithmeticAverageValue() received wrong parameters!(array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:309 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
+2019-06-13 00:36:31 WARN  VectorLogic:282 - Method findValuePositionLinearSearch() received wrong parameters (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:133 - Method calculateGeometricAverageValue() received wrong parameters (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:79 - Method findMinValue() received wrong parameters! (array == null or array.length==0)
+2019-06-13 00:36:31 WARN  VectorLogic:187 - Method isArraySorted() received wrong parameters (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:345 - Method flipArray() receive wrong parameters! (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:513 - Method sortMerge() receive wrong parameters! (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:445 - Method insertionSort() receive wrong parameters! (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:79 - Method findMinValue() received wrong parameters! (array == null or array.length==0)
+2019-06-13 00:36:31 WARN  VectorLogic:55 - Method findMaxValue() received wrong parameters! (array == null or array.length==0)
+2019-06-13 00:36:31 WARN  VectorLogic:309 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
+2019-06-13 00:36:31 WARN  VectorLogic:477 - Method selectionSort() receive wrong parameters! (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:401 - Method shakerSort() receive wrong parameters! (array == null)
+2019-06-13 00:36:31 WARN  VectorLogic:253 - Method findLocalMaxPosition() received wrong parameters (array == null or array.length==0)
+2019-06-13 00:36:31 WARN  VectorLogic:55 - Method findMaxValue() received wrong parameters! (array == null or array.length==0)
+2019-06-13 00:36:31 WARN  VectorLogic:224 - Method findLocalMinPosition() received wrong parameters(array==null or array.length=0)
+2019-06-13 00:36:31 WARN  VectorLogic:309 - Method findValuePositionBinarySearch() received wrong parameters (array == null or or array not sorted)
+2019-06-13 00:36:31 WARN  VectorLogic:372 - Method bubbleSort() receive wrong parameters! (array == null)
+2019-06-13 00:36:31 INFO  VectorLogicTest:733 - VectorLogicTest finished!

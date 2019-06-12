@@ -52,7 +52,7 @@ public class VectorLogic {
      */
     public static double findMaxValue(double[] array) throws WrongArgumentsException {
         if (array == null || array.length == 0) {
-            LOGGER.error("Method findMaxValue() received wrong parameters! (array == null or array.length==0)");
+            LOGGER.warn("Method findMaxValue() received wrong parameters! (array == null or array.length==0)");
             throw new WrongArgumentsException("Method findMaxValue() received wrong parameters!" +
                     " (array == null or array.length==0)");
         }
@@ -76,7 +76,7 @@ public class VectorLogic {
      */
     public static double findMinValue(double[] array) throws WrongArgumentsException {
         if (array == null || array.length == 0) {
-            LOGGER.error("Method findMinValue() received wrong parameters! (array == null or array.length==0)");
+            LOGGER.warn("Method findMinValue() received wrong parameters! (array == null or array.length==0)");
             throw new WrongArgumentsException("Method findMinValue() received wrong parameters!" +
                     " (array == null or array.length==0)");
         }
@@ -103,7 +103,7 @@ public class VectorLogic {
      */
     public static double calculateArithmeticAverageValue(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method calculateArithmeticAverageValue() received wrong parameters!(array == null)");
+            LOGGER.warn("Method calculateArithmeticAverageValue() received wrong parameters!(array == null)");
             throw new WrongArgumentsException("Method calculateArithmeticAverageValue() " +
                     "received wrong parameters! (array == null)");
         }
@@ -130,7 +130,7 @@ public class VectorLogic {
      */
     public static double calculateGeometricAverageValue(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method calculateGeometricAverageValue() received wrong parameters (array == null)");
+            LOGGER.warn("Method calculateGeometricAverageValue() received wrong parameters (array == null)");
             throw new WrongArgumentsException("Method calculateGeometricAverageValue() " +
                     "received wrong parameters! (array == null)");
         }
@@ -157,7 +157,7 @@ public class VectorLogic {
     public static boolean isArraySortedByAscending(double[] array) {
 
         if (array == null) {
-            LOGGER.error("Method isArraySortedByAscending() received wrong parameters (array == null)");
+            LOGGER.warn("Method isArraySortedByAscending() received wrong parameters (array == null)");
             return false;
         }
         if (array.length == 0) {
@@ -184,7 +184,7 @@ public class VectorLogic {
      */
     public static boolean isArraySorted(double[] array) {
         if (array == null) {
-            LOGGER.error("Method isArraySorted() received wrong parameters (array == null)");
+            LOGGER.warn("Method isArraySorted() received wrong parameters (array == null)");
             return false;
         }
         if (array.length == 0) {
@@ -221,7 +221,7 @@ public class VectorLogic {
      */
     public static int findLocalMinPosition(double[] array) throws WrongArgumentsException {
         if (array == null || array.length == 0) {
-            LOGGER.error("Method findLocalMinPosition() received wrong parameters(array==null or array.length=0)");
+            LOGGER.warn("Method findLocalMinPosition() received wrong parameters(array==null or array.length=0)");
             throw new WrongArgumentsException("Method findLocalMinPosition() received " +
                     "wrong parameters(array==null or array.length=0)");
         }
@@ -250,7 +250,7 @@ public class VectorLogic {
      */
     public static int findLocalMaxPosition(double[] array) throws WrongArgumentsException {
         if (array == null || array.length == 0) {
-            LOGGER.error("Method findLocalMaxPosition() received wrong parameters (array == null or array.length==0)");
+            LOGGER.warn("Method findLocalMaxPosition() received wrong parameters (array == null or array.length==0)");
             throw new WrongArgumentsException("Method findLocalMaxPosition() received " +
                     "wrong parameters(array==null or array.length=0)");
         }
@@ -279,7 +279,7 @@ public class VectorLogic {
      */
     public static int findValuePositionLinearSearch(double[] array, double valueToSearch) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method findValuePositionLinearSearch() received wrong parameters (array == null)");
+            LOGGER.warn("Method findValuePositionLinearSearch() received wrong parameters (array == null)");
             throw new WrongArgumentsException("Method findValuePositionLinearSearch() received " +
                     "wrong parameters(array==null)");
         }
@@ -306,7 +306,7 @@ public class VectorLogic {
     public static int findValuePositionBinarySearch(double[] array, double valueToSearch) throws WrongArgumentsException {
 
         if (array == null || !isArraySorted(array)) {
-            LOGGER.error("Method findValuePositionBinarySearch() received wrong parameters " +
+            LOGGER.warn("Method findValuePositionBinarySearch() received wrong parameters " +
                     "(array == null or or array not sorted)");
             throw new WrongArgumentsException("Method findValuePositionBinarySearch() received wrong parameters " +
                     "(array == null or or array not sorted)");
@@ -340,13 +340,13 @@ public class VectorLogic {
      * if array = null will return {@see WRONG_ARGUMENT}
      * @throws WrongArgumentsException if array = null
      */
-    public static double[] getReverseArray(double[] array) throws WrongArgumentsException {
+    public static void flipArray(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method getReverseArray() receive wrong parameters! (array == null)");
-            throw new WrongArgumentsException("Method getReverseArray() received wrong parameters!(array == null)");
+            LOGGER.warn("Method flipArray() receive wrong parameters! (array == null)");
+            throw new WrongArgumentsException("Method flipArray() received wrong parameters!(array == null)");
         }
         if (array.length < 2) {
-            return array;
+            return;
         }
 
         for (int i = 0; i < array.length / 2; i++) {
@@ -354,7 +354,7 @@ public class VectorLogic {
             array[i] = array[array.length - 1 - i];
             array[array.length - 1 - i] = temp;
         }
-        return array;
+
     }
 
 
@@ -367,13 +367,13 @@ public class VectorLogic {
      * if array length < 2 will return received {@code array}
      * @throws WrongArgumentsException if array == null
      */
-    public static double[] bubbleSort(double[] array) throws WrongArgumentsException {
+    public static void bubbleSort(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method bubbleSort() receive wrong parameters! (array == null)");
+            LOGGER.warn("Method bubbleSort() receive wrong parameters! (array == null)");
             throw new WrongArgumentsException("Method bubbleSort() received wrong parameters!(array == null)");
         }
         if (array.length < 2) {
-            return array;
+            return;
         }
 
         for (int i = 0; i < array.length; i++) {
@@ -385,7 +385,6 @@ public class VectorLogic {
                 }
             }
         }
-        return array;
     }
 
     /**
@@ -397,13 +396,13 @@ public class VectorLogic {
      * if array length < 2 will return received {@code array}
      * @throws WrongArgumentsException if array == null
      */
-    public static double[] shakerSort(double[] array) throws WrongArgumentsException {
+    public static void shakerSort(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method shakerSort() receive wrong parameters! (array == null)");
+            LOGGER.warn("Method shakerSort() receive wrong parameters! (array == null)");
             throw new WrongArgumentsException("Method shakerSort() received wrong parameters!(array == null)");
         }
         if (array.length < 2) {
-            return array;
+            return;
         }
 
         int leftPosition = 1;
@@ -430,8 +429,6 @@ public class VectorLogic {
             }
             rightPosition--;
         }
-
-        return array;
     }
 
     /**
@@ -443,13 +440,13 @@ public class VectorLogic {
      * if array length < 2 will return received {@code array}
      * @throws WrongArgumentsException if array == null
      */
-    public static double[] insertionSort(double[] array) throws WrongArgumentsException {
+    public static void insertionSort(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method insertionSort() receive wrong parameters! (array == null)");
+            LOGGER.warn("Method insertionSort() receive wrong parameters! (array == null)");
             throw new WrongArgumentsException("Method insertionSort() received wrong parameters!(array == null)");
         }
         if (array.length < 2) {
-            return array;
+            return;
         }
 
         for (int sortedPosition = 1; sortedPosition < array.length; sortedPosition++) {
@@ -463,7 +460,6 @@ public class VectorLogic {
             }
             array[notSortedPosition] = value;
         }
-        return array;
     }
 
 
@@ -476,13 +472,13 @@ public class VectorLogic {
      * if array length < 2 will return received {@code array}
      * @throws WrongArgumentsException if array == null
      */
-    public static double[] selectionSort(double[] array) throws WrongArgumentsException {
+    public static void selectionSort(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method selectionSort() receive wrong parameters! (array == null)");
+            LOGGER.warn("Method selectionSort() receive wrong parameters! (array == null)");
             throw new WrongArgumentsException("Method selectionSort() received wrong parameters!(array == null)");
         }
         if (array.length < 2) {
-            return array;
+            return;
         }
 
         for (int i = 0; i < array.length; i++) {
@@ -499,7 +495,6 @@ public class VectorLogic {
                 array[i] = temp;
             }
         }
-        return array;
     }
 
     /**
@@ -513,21 +508,34 @@ public class VectorLogic {
      * if array length < 2 will return received {@code array}
      * @throws WrongArgumentsException if array == null
      */
-    public static double[] sortMerge(double[] array) throws WrongArgumentsException {
+    public static void sortMerge(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method sortMerge() receive wrong parameters! (array == null)");
+            LOGGER.warn("Method sortMerge() receive wrong parameters! (array == null)");
             throw new WrongArgumentsException("Method sortMerge() received wrong parameters!(array == null)");
         }
         if (array.length < 2) {
+            return;
+        }
+        //break our big array to  smaller arrays
+        breakArrayToArrays(array);
+    }
+
+    /**
+     * Private method that calling from sortMerger() for break big array to  smaller arrays
+     *
+     * @param array
+     * @return smaller arrays
+     */
+    private static double[] breakArrayToArrays(double[] array) {
+        if (array.length < 2) {
             return array;
         }
+        final int middlePosition = array.length / 2;
 
-        int middlePosition = array.length / 2;
+        final double[] firstArray = breakArrayToArrays(Arrays.copyOfRange(array, FIRST_POSITION_ARRAY, middlePosition));
+        final double[] secondArray = breakArrayToArrays(Arrays.copyOfRange(array, middlePosition, array.length));
 
-        double[] firstArray = sortMerge(Arrays.copyOfRange(array, FIRST_POSITION_ARRAY, middlePosition));
-        double[] secondArray = sortMerge(Arrays.copyOfRange(array, middlePosition, array.length));
-
-        return merge(firstArray, secondArray);
+        return merge(firstArray, secondArray, array);
     }
 
     /**
@@ -537,13 +545,13 @@ public class VectorLogic {
      * @param secondArray
      * @return {@code double[]} Sorted array
      */
-    private static double[] merge(double[] firstArray, double[] secondArray) {
-        int firstArrayLength = firstArray.length;
-        int secondArrayLength = secondArray.length;
+    private static double[] merge(double[] firstArray, double[] secondArray, final double[] resultArray) {
+
+        final int firstArrayLength = firstArray.length;
+        final int secondArrayLength = secondArray.length;
+        final int finalArrayLength = resultArray.length;
         int firstArrPosition = 0;
         int secondArrPosition = 0;
-        int finalArrayLength = firstArrayLength + secondArrayLength;
-        double[] resultArray = new double[finalArrayLength];
 
         for (int i = 0; i < finalArrayLength; i++) {
             if (secondArrPosition < secondArrayLength && firstArrPosition < firstArrayLength) {
@@ -576,21 +584,19 @@ public class VectorLogic {
      * if array length < 2 will return received {@code array}
      * @throws WrongArgumentsException if array == null
      */
-    public static double[] quickSort(double[] array) throws WrongArgumentsException {
+    public static void quickSort(double[] array) throws WrongArgumentsException {
         if (array == null) {
-            LOGGER.error("Method quickSort() receive wrong parameters! (array == null)");
+            LOGGER.warn("Method quickSort() receive wrong parameters! (array == null)");
             throw new WrongArgumentsException("Method quickSort() received wrong parameters!(array == null)");
         }
         if (array.length < 2) {
-            return array;
+            return;
         }
 
         int startIndex = 0;
         int endIndex = array.length - 1;
 
         doQuickSort(array, startIndex, endIndex);
-
-        return array;
     }
 
     /**

@@ -449,7 +449,9 @@ public class VectorLogicTest {
         double[] array = new double[]{1, 5, 7, 2, 2.2, 7.2, 55, 105, 255.25, 445, 605, 905};
         double[] expectedArray = new double[]{905.0, 605.0, 445.0, 255.25, 105.0, 55.0, 7.2, 2.2, 2.0, 7.0, 5.0, 1.0};
 
-        assertArrayEquals(expectedArray, VectorLogic.getReverseArray(array), DELTA);
+        VectorLogic.flipArray(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -457,7 +459,9 @@ public class VectorLogicTest {
         double[] array = new double[]{1, 5, 8, 2, 1, 7};
         double[] expectedArray = new double[]{7, 1, 2, 8, 5, 1};
 
-        assertArrayEquals(expectedArray, VectorLogic.getReverseArray(array), DELTA);
+        VectorLogic.flipArray(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -465,7 +469,9 @@ public class VectorLogicTest {
         double[] array = new double[]{2};
         double[] expectedArray = new double[]{2};
 
-        assertArrayEquals(expectedArray, VectorLogic.getReverseArray(array), DELTA);
+        VectorLogic.flipArray(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test(expected = WrongArgumentsException.class)
@@ -474,7 +480,7 @@ public class VectorLogicTest {
         double[] array = null;
         //when
         //then
-        VectorLogic.getReverseArray(array);
+        VectorLogic.flipArray(array);
     }
 
     @Test
@@ -483,7 +489,9 @@ public class VectorLogicTest {
         double[] array = new double[0];
         //when
         //then
-        assertArrayEquals(array, VectorLogic.getReverseArray(array), DELTA);
+        VectorLogic.flipArray(array);
+
+        assertArrayEquals(array, array, DELTA);
     }
 
     /////
@@ -492,7 +500,9 @@ public class VectorLogicTest {
         double[] array = new double[]{5, 1, 0, -3, 95, 0.25, 75, 4};
         double[] expectedArray = new double[]{-3, 0, 0.25, 1, 4, 5, 75, 95};
 
-        assertArrayEquals(expectedArray, VectorLogic.bubbleSort(array), DELTA);
+        VectorLogic.bubbleSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -500,14 +510,18 @@ public class VectorLogicTest {
         double[] array = new double[]{1};
         double[] expectedArray = new double[]{1};
 
-        assertArrayEquals(expectedArray, VectorLogic.bubbleSort(array), DELTA);
+        VectorLogic.bubbleSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
     public void bubbleSortTest_correctParameters3_true() throws WrongArgumentsException {
         double[] array = new double[]{};
 
-        assertArrayEquals(array, VectorLogic.bubbleSort(array), DELTA);
+        VectorLogic.bubbleSort(array);
+
+        assertArrayEquals(array, array, DELTA);
     }
 
 
@@ -524,7 +538,9 @@ public class VectorLogicTest {
         double[] array = new double[]{5, 1, 0, -3, 95, 0.25, 75, 4};
         double[] expectedArray = new double[]{-3, 0, 0.25, 1, 4, 5, 75, 95};
 
-        assertArrayEquals(expectedArray, VectorLogic.shakerSort(array), DELTA);
+        VectorLogic.shakerSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -532,14 +548,18 @@ public class VectorLogicTest {
         double[] array = new double[]{1};
         double[] expectedArray = new double[]{1};
 
-        assertArrayEquals(expectedArray, VectorLogic.shakerSort(array), DELTA);
+        VectorLogic.shakerSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
     public void shakerSortTest_correctParameters3_true() throws WrongArgumentsException {
         double[] array = new double[]{};
 
-        assertArrayEquals(array, VectorLogic.shakerSort(array), DELTA);
+        VectorLogic.shakerSort(array);
+
+        assertArrayEquals(array, array, DELTA);
     }
 
 
@@ -556,7 +576,9 @@ public class VectorLogicTest {
         double[] array = new double[]{5, 1, 0, -3, 95, 0.25, 75, 4};
         double[] expectedArray = new double[]{-3, 0, 0.25, 1, 4, 5, 75, 95};
 
-        assertArrayEquals(expectedArray, VectorLogic.insertionSort(array), DELTA);
+        VectorLogic.insertionSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -564,14 +586,18 @@ public class VectorLogicTest {
         double[] array = new double[]{1};
         double[] expectedArray = new double[]{1};
 
-        assertArrayEquals(expectedArray, VectorLogic.insertionSort(array), DELTA);
+        VectorLogic.insertionSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
     public void insertionSortTest_correctParameters3_true() throws WrongArgumentsException {
         double[] array = new double[]{};
 
-        assertArrayEquals(array, VectorLogic.insertionSort(array), DELTA);
+        VectorLogic.insertionSort(array);
+
+        assertArrayEquals(array, array, DELTA);
     }
 
 
@@ -588,7 +614,9 @@ public class VectorLogicTest {
         double[] array = new double[]{5, 1, 0, -3, 95, 0.25, 75, 4};
         double[] expectedArray = new double[]{-3, 0, 0.25, 1, 4, 5, 75, 95};
 
-        assertArrayEquals(expectedArray, VectorLogic.selectionSort(array), DELTA);
+        VectorLogic.selectionSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -596,14 +624,19 @@ public class VectorLogicTest {
         double[] array = new double[]{1};
         double[] expectedArray = new double[]{1};
 
-        assertArrayEquals(expectedArray, VectorLogic.selectionSort(array), DELTA);
+        VectorLogic.selectionSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
     public void selectionSortTest_correctParameters3_true() throws WrongArgumentsException {
         double[] array = new double[]{};
 
-        assertArrayEquals(array, VectorLogic.selectionSort(array), DELTA);
+
+        VectorLogic.selectionSort(array);
+
+        assertArrayEquals(array, array, DELTA);
     }
 
 
@@ -621,7 +654,10 @@ public class VectorLogicTest {
         double[] array = new double[]{5, 1, 0, -3, 95, 0.25, 75, 4};
         double[] expectedArray = new double[]{-3, 0, 0.25, 1, 4, 5, 75, 95};
 
-        assertArrayEquals(expectedArray, VectorLogic.sortMerge(array), DELTA);
+
+        VectorLogic.sortMerge(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -629,14 +665,18 @@ public class VectorLogicTest {
         double[] array = new double[]{1};
         double[] expectedArray = new double[]{1};
 
-        assertArrayEquals(expectedArray, VectorLogic.sortMerge(array), DELTA);
+        VectorLogic.sortMerge(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
     public void sortMergeTest_correctParameters3_true() throws WrongArgumentsException {
         double[] array = new double[]{};
 
-        assertArrayEquals(array, VectorLogic.sortMerge(array), DELTA);
+        VectorLogic.sortMerge(array);
+
+        assertArrayEquals(array, array, DELTA);
     }
 
 
@@ -653,7 +693,9 @@ public class VectorLogicTest {
         double[] array = new double[]{5, 1, 0, -3, 95, 0.25, 75, 4};
         double[] expectedArray = new double[]{-3, 0, 0.25, 1, 4, 5, 75, 95};
 
-        assertArrayEquals(expectedArray, VectorLogic.quickSort(array), DELTA);
+        VectorLogic.quickSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
@@ -661,14 +703,19 @@ public class VectorLogicTest {
         double[] array = new double[]{1};
         double[] expectedArray = new double[]{1};
 
-        assertArrayEquals(expectedArray, VectorLogic.quickSort(array), DELTA);
+        VectorLogic.quickSort(array);
+
+        assertArrayEquals(expectedArray, array, DELTA);
     }
 
     @Test
     public void quickSortTest_correctParameters3_true() throws WrongArgumentsException {
+        //given
         double[] array = new double[]{};
-
-        assertArrayEquals(array, VectorLogic.quickSort(array), DELTA);
+        //when
+        VectorLogic.quickSort(array);
+        //then
+        assertArrayEquals(array, array, DELTA);
     }
 
 
