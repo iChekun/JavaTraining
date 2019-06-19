@@ -1,0 +1,17 @@
+2019-06-19 15:22:53 INFO  VectorLogicTest:24 - VectorLogicTest started!
+2019-06-19 15:22:53 WARN  VectorLogic:82 - Method calculateArithmeticAverageValue() received not valid vector
+2019-06-19 15:22:53 WARN  VectorLogic:194 - Method findValuePositionLinearSearch() received not valid vector
+2019-06-19 15:22:53 WARN  VectorLogic:96 - Method calculateGeometricAverageValue() received not valid vector
+2019-06-19 15:22:53 WARN  VectorLogic:67 - Method findMinValue() received not valid vector
+2019-06-19 15:22:53 WARN  VectorLogic:241 - Method flipArray() received not valid vector
+2019-06-19 15:22:53 WARN  VectorLogic:178 - Method findLocalMaxPosition() received not valid vector
+2019-06-19 15:22:53 WARN  VectorLogic:158 - Method findLocalMinPosition() received not valid vector
+2019-06-19 15:22:53 INFO  VectorLogicTest:508 - VectorLogicTest finished!
+2019-06-19 15:22:53 INFO  VectorLogicTest:22 - VectorsSortingTest started!
+2019-06-19 15:22:53 WARN  VectorLogic:258 - Method quickSort() receive wrong parameters! (array == null)
+2019-06-19 15:22:53 WARN  VectorLogic:181 - Method sortMerge() receive wrong parameters! (array == null)
+2019-06-19 15:22:53 WARN  VectorLogic:110 - Method insertionSort() receive wrong parameters! (array == null)
+2019-06-19 15:22:53 WARN  VectorLogic:143 - Method selectionSort() receive wrong parameters! (array == null)
+2019-06-19 15:22:53 WARN  VectorLogic:68 - Method shakerSort() receive wrong parameters! (array == null)
+2019-06-19 15:22:53 WARN  VectorLogic:39 - Method bubbleSort() receive wrong parameters! (array == null)
+2019-06-19 15:22:53 INFO  VectorLogicTest:267 - VectorSortingTest finished!

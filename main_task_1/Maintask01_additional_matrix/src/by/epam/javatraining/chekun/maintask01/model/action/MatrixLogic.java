@@ -27,7 +27,7 @@ public class MatrixLogic {
      * if matrix is not a rectangular -> false
      */
     public static boolean isMatrixRectangular(double[][] matrix) {
-        if (matrix == null || !isMatrix(matrix)) {
+        if (!isMatrix(matrix)) {
             LOGGER.warn("Method isMatrixRectangular() received wrong parameter!" +
                     "(matrix == null or it`s not a matrix)");
             return false;
@@ -49,7 +49,6 @@ public class MatrixLogic {
      */
     public static boolean isMatrix(double[][] matrix) {
         if (matrix == null) {
-            LOGGER.warn("Method isMatrix() received wrong parameter!(matrix == null)");
             return false;
         }
         if (matrix.length == 0) {
@@ -73,7 +72,7 @@ public class MatrixLogic {
      * @throws WrongArgumentsException if matrix == null or it is not a matrix.
      */
     public static double findMinValue(double[][] matrix) throws WrongArgumentsException {
-        if (matrix == null || !isMatrix(matrix)) {
+        if (!isMatrix(matrix)) {
             LOGGER.warn("Method findMinValue() received wrong parameter!(matrix == null or it's not a matrix)");
             throw new WrongArgumentsException("Method findMinValue() received wrong parameter " +
                     "(matrix == null or it's not a matrix)");
@@ -99,7 +98,7 @@ public class MatrixLogic {
      * @throws WrongArgumentsException if matrix == null or it is not a matrix.
      */
     public static double findMaxValue(double[][] matrix) throws WrongArgumentsException {
-        if (matrix == null || !isMatrix(matrix)) {
+        if (!isMatrix(matrix)) {
             LOGGER.warn("Method findMaxValue() received wrong parameter(matrix == null or it's not a matrix)");
             throw new WrongArgumentsException("Method findMaxValue() received wrong parameter " +
                     "(matrix == null or it's not a matrix)");
@@ -124,7 +123,7 @@ public class MatrixLogic {
      * (!!!)if matrix == null or matrix is not a rectangular -> false
      */
     public static boolean isMatrixSymmetricWithMainDiagonal(double[][] matrix) {
-        if (matrix == null || !isMatrixRectangular(matrix)) {
+        if ( !isMatrixRectangular(matrix)) {
             LOGGER.warn("Method isMatrixSymmetricWithMainDiagonal() received wrong parameter!(matrix == null" +
                     "or matrix is not rectangular)");
             return false;
@@ -148,7 +147,7 @@ public class MatrixLogic {
      * (!!!)if matrix == null or matrix is not a rectangular -> false
      */
     public static boolean isMatrixSymmetricWithIncidentalDiagonal(double[][] matrix) {
-        if (matrix == null || !isMatrixRectangular(matrix)) {
+        if (!isMatrixRectangular(matrix)) {
             LOGGER.warn("Method isMatrixSymmetricWithIncidentalDiagonal() received wrong parameter!(matrix == null" +
                     "or matrix is not rectangular)");
             return false;
@@ -174,7 +173,7 @@ public class MatrixLogic {
      * @throws WrongArgumentsException if matrix == null or it is not a matrix
      */
     public static void transposeMatrix(double[][] matrix) throws WrongArgumentsException {
-        if (matrix == null || !isMatrix(matrix)) {
+        if ( !isMatrix(matrix)) {
             LOGGER.warn("Method transposeMatrix() received wrong parameter!(matrix == null or it`s not a matrix)");
             throw new WrongArgumentsException("Method transposeMatrix() received wrong parameter!" +
                     "(matrix == null or it`s not a matrix)");
@@ -198,7 +197,7 @@ public class MatrixLogic {
      * @throws WrongArgumentsException if received matrix == null or it is not a matrix
      */
     public static int[] findFirstLocalMinPosition(double[][] matrix) throws WrongArgumentsException {
-        if (matrix == null || !isMatrix(matrix)) {
+        if ( !isMatrix(matrix)) {
             LOGGER.warn("Method findFirstLocalMinPosition() received wrong parameter!(matrix == null or it`s not a matrix))");
             throw new WrongArgumentsException("Method findFirstLocalMinPosition() received wrong parameter!" +
                     " (matrix == null or it`s not a matrix))");
