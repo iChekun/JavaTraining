@@ -1,0 +1,64 @@
+2019-06-19 13:50:53 INFO  TripCreatorTest:23 - TripSpecificationByCostTest started!
+2019-06-19 13:50:53 INFO  TripCreatorTest:52 - TripSpecificationByCostTest finished!
+2019-06-19 13:52:18 INFO  TripCreatorTest:15 - FreeIdFinderTest started!
+2019-06-19 13:52:18 INFO  TripCreatorTest:29 - FreeIdFinderTest finished!
+2019-06-19 13:52:24 INFO  TripCreatorTest:23 - TripCreatorTest started!
+2019-06-19 13:52:24 ERROR TripCreator:52 - Method create() received wrong trip type: belarus minsk 1 2 2019 5
+2019-06-19 13:52:24 ERROR TripCreator:52 - Method create() received wrong trip type: 
+2019-06-19 13:52:24 INFO  TripCreatorTest:52 - TripCreatorTest finished!
+2019-06-19 13:52:35 INFO  TripComparatorByCostTest:21 - TripComparatorByCostTest started!
+2019-06-19 13:52:35 INFO  TripComparatorByCostTest:68 - TripComparatorByCostTest finished!
+2019-06-19 13:52:41 INFO  TripComparatorByCountryTest:21 - TripComparatorByCountryTest started!
+2019-06-19 13:52:41 INFO  TripComparatorByCountryTest:68 - TripComparatorByCountryTest finished!
+2019-06-19 13:52:41 INFO  TripComparatorByDateTest:21 - TripComparatorByDateTest started!
+2019-06-19 13:52:41 INFO  TripComparatorByDateTest:68 - TripComparatorByDateTest finished!
+2019-06-19 13:53:08 INFO  ConfigurationFileReaderTest:27 - TripFileReaderTest started!
+2019-06-19 13:53:08 ERROR TripFileReader:46 - Path () is incorrect.
+2019-06-19 13:53:08 ERROR TripFileReader:46 - Path (null) is incorrect.
+2019-06-19 13:53:08 ERROR TripFileReader:49 - File (./test_data/testInputData/badTripsData.txt) has 0 correct lines.
+2019-06-19 13:53:08 INFO  ConfigurationFileReaderTest:81 - TripFileReaderTest finished!!
+2019-06-19 13:53:08 INFO  TripFactoryTest:26 - TripFactoryTest starter!
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:70 - Method from TripFactory createTrip() received wrong parameters: [rest belarus vega 5 1 2 2019 breakfast plane]
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:70 - Method from TripFactory createTrip() received wrong parameters: [5]
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:70 - Method from TripFactory createTrip() received wrong parameters: [healing belarus vega 5 1 2 2019 breakfast plane cold]
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:70 - Method from TripFactory createTrip() received wrong parameters: [excursion belarus vega 5 1 2 2019 breakfast plane stela,medvejino,dvoresSporta]
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:70 - Method from TripFactory createTrip() received wrong parameters: [belarus vega 5 1 2 2019 breakfast plane]
+2019-06-19 13:53:08 INFO  TripFactoryTest:81 - TripFactoryTest finished!!
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 0.3.2019
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 12.0.2019
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 12.0.2018
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 32.0.2020
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 31.13.2020
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 31.2.2020
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 31.2.2019
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 31.6.2019
+2019-06-19 13:53:08 INFO  TripCreatorTest:23 - TripSpecificationByCostTest started!
+2019-06-19 13:53:08 INFO  TripCreatorTest:52 - TripSpecificationByCostTest finished!
+2019-06-19 13:53:08 INFO  TripFactoryTest:33 - TripsRepositoryTest starter!
+2019-06-19 13:53:08 INFO  TripFactoryTest:292 - TripsRepositoryTest finished!!
+2019-06-19 13:53:08 INFO  TripCreatorTest:24 - TripInputValidatorTest started!
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 1.5.2017
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: 1.-5.2019
+2019-06-19 13:53:08 WARN  DateChecker:58 - Method isDateCorrect() received wrong parameters: -1.5.2019
+2019-06-19 13:53:08 INFO  TripCreatorTest:256 - TripInputValidatorTest finished!
+2019-06-19 13:53:08 INFO  ConfigurationFileReaderTest:16 - ConfigurationTest started!
+2019-06-19 13:53:08 INFO  ConfigurationFileReaderTest:27 - ConfigurationTest finished!!
+2019-06-19 13:53:08 INFO  ConfigurationFileReaderTest:24 - ConfigurationFileReaderTest started!
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:45 - Path () is incorrect.
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:45 - Path (./test_data/testConfigurationData/cost1.txt) is incorrect.
+2019-06-19 13:53:08 ERROR ConfigurationFileReader:45 - Path (null) is incorrect.
+2019-06-19 13:53:09 ERROR ConfigurationFileReader:75 - Path (null) is incorrect.
+2019-06-19 13:53:09 ERROR ConfigurationFileReader:75 - Path () is incorrect.
+2019-06-19 13:53:09 ERROR ConfigurationFileReader:45 - Path (./test_data/testConfigurationData/conf.txt) is incorrect.
+2019-06-19 13:53:09 INFO  ConfigurationFileReaderTest:85 - ConfigurationFileReaderTest finished!!
+2019-06-19 13:53:09 INFO  TripComparatorByTypeOfFoodTest:21 - TripComparatorByTypeOfFoodTest started!
+2019-06-19 13:53:09 INFO  TripComparatorByTypeOfFoodTest:68 - TripComparatorByTypeOfFoodTest finished!
+2019-06-19 13:53:09 INFO  TripComparatorByTransportTypeTest:21 - TripComparatorByTransportTypeTest started!
+2019-06-19 13:53:09 INFO  TripComparatorByTransportTypeTest:68 - TripComparatorByTransportTypeTest finished!
+2019-06-19 13:53:09 INFO  TripComparatorByNameTest:21 - TripComparatorByNameTest started!
+2019-06-19 13:53:09 INFO  TripComparatorByNameTest:68 - TripComparatorByNameTest finished!
+2019-06-19 13:53:09 INFO  TripComparatorByHotelLevelTest:21 - TripComparatorByHotelLevelTest started!
+2019-06-19 13:53:09 INFO  TripComparatorByHotelLevelTest:68 - TripComparatorByHotelLevelTest finished!
+2019-06-19 13:53:09 INFO  TripComparatorByIDTest:21 - TripComparatorByIDTest started!
+2019-06-19 13:53:09 INFO  TripComparatorByIDTest:68 - TripComparatorByIDTest finished!
+2019-06-19 13:53:27 ERROR TripCreator:52 - Method create() received wrong trip type: healing turkey vega 5 15 11 2019 10000.2 without  cold 

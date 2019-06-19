@@ -1,0 +1,8 @@
+hotel_minsk
+hotel_europe
+president_hotel
+vega
+moscow_city
+maksim_gorky
+ibis_badjet
+bristol

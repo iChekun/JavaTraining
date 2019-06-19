@@ -1,0 +1,5 @@
+rest grondo moscow_city 2 1 1 2019 5000 all_in
+moscow_city 2 1 1 2019 5000 all_in
+pinsk moscow_city 2 1 1 2019 5000 all_in
+healing Belarus moscow_city  1 1 2019 5000 all_in
+rest  moscow_city 2 1 1 2019 5000

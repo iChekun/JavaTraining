@@ -1,0 +1,90 @@
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:80 - Save repository
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip20190000, id=20190000, country='belarus', hotelName='bristol', hotelLevel=5, departureDate=1.1.2019, cost=1000.0, typeOfFood='without', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip40010000, id=40010000, country='belarus', hotelName='moscow_city', hotelLevel=5, departureDate=1.1.2020, cost=1000.0, typeOfFood='breakfast', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48680000, id=48680000, country='russian', hotelName='moscow_city', hotelLevel=2, departureDate=19.5.2019, cost=10500.0, typeOfFood='breakfast', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48550000, id=48550000, country='egypt', hotelName='maksim_gorky', hotelLevel=3, departureDate=12.1.2019, cost=19000.0, typeOfFood='breakfast_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip1610000, id=1610000, country='italy', hotelName='president_hotel', hotelLevel=4, departureDate=25.2.2019, cost=24000.0, typeOfFood='breakfast_lunch_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip12830000, id=12830000, country='belarus', hotelName='hotel_Minsk', hotelLevel=4, departureDate=1.7.2019, cost=5400.0, typeOfFood='breakfast', typeOfTransport='train'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip9510000, id=9510000, country='greece', hotelName='president_hotel', hotelLevel=4, departureDate=22.10.2019, cost=5900.0, typeOfFood='all_in', typeOfTransport='ship'}, diagnosis='cold'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip49510000, id=49510000, country='russian', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip21830000, id=21830000, country='italy', hotelName='bristol', hotelLevel=2, departureDate=12.11.2019, cost=5900.0, typeOfFood='without', typeOfTransport='plane'}, diagnosis='good'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:83 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:87 - Repository after SORT by cost: 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip20190000, id=20190000, country='belarus', hotelName='bristol', hotelLevel=5, departureDate=1.1.2019, cost=1000.0, typeOfFood='without', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip40010000, id=40010000, country='belarus', hotelName='moscow_city', hotelLevel=5, departureDate=1.1.2020, cost=1000.0, typeOfFood='breakfast', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip49510000, id=49510000, country='russian', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip12830000, id=12830000, country='belarus', hotelName='hotel_Minsk', hotelLevel=4, departureDate=1.7.2019, cost=5400.0, typeOfFood='breakfast', typeOfTransport='train'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip9510000, id=9510000, country='greece', hotelName='president_hotel', hotelLevel=4, departureDate=22.10.2019, cost=5900.0, typeOfFood='all_in', typeOfTransport='ship'}, diagnosis='cold'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip21830000, id=21830000, country='italy', hotelName='bristol', hotelLevel=2, departureDate=12.11.2019, cost=5900.0, typeOfFood='without', typeOfTransport='plane'}, diagnosis='good'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48680000, id=48680000, country='russian', hotelName='moscow_city', hotelLevel=2, departureDate=19.5.2019, cost=10500.0, typeOfFood='breakfast', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48550000, id=48550000, country='egypt', hotelName='maksim_gorky', hotelLevel=3, departureDate=12.1.2019, cost=19000.0, typeOfFood='breakfast_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip1610000, id=1610000, country='italy', hotelName='president_hotel', hotelLevel=4, departureDate=25.2.2019, cost=24000.0, typeOfFood='breakfast_lunch_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:91 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:93 - Repository after SORT by HotelLevel: 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip21830000, id=21830000, country='italy', hotelName='bristol', hotelLevel=2, departureDate=12.11.2019, cost=5900.0, typeOfFood='without', typeOfTransport='plane'}, diagnosis='good'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48680000, id=48680000, country='russian', hotelName='moscow_city', hotelLevel=2, departureDate=19.5.2019, cost=10500.0, typeOfFood='breakfast', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48550000, id=48550000, country='egypt', hotelName='maksim_gorky', hotelLevel=3, departureDate=12.1.2019, cost=19000.0, typeOfFood='breakfast_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip12830000, id=12830000, country='belarus', hotelName='hotel_Minsk', hotelLevel=4, departureDate=1.7.2019, cost=5400.0, typeOfFood='breakfast', typeOfTransport='train'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip9510000, id=9510000, country='greece', hotelName='president_hotel', hotelLevel=4, departureDate=22.10.2019, cost=5900.0, typeOfFood='all_in', typeOfTransport='ship'}, diagnosis='cold'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip1610000, id=1610000, country='italy', hotelName='president_hotel', hotelLevel=4, departureDate=25.2.2019, cost=24000.0, typeOfFood='breakfast_lunch_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip20190000, id=20190000, country='belarus', hotelName='bristol', hotelLevel=5, departureDate=1.1.2019, cost=1000.0, typeOfFood='without', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip40010000, id=40010000, country='belarus', hotelName='moscow_city', hotelLevel=5, departureDate=1.1.2020, cost=1000.0, typeOfFood='breakfast', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip49510000, id=49510000, country='russian', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:98 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:100 - Repository after ADD new trip: 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip21830000, id=21830000, country='italy', hotelName='bristol', hotelLevel=2, departureDate=12.11.2019, cost=5900.0, typeOfFood='without', typeOfTransport='plane'}, diagnosis='good'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48680000, id=48680000, country='russian', hotelName='moscow_city', hotelLevel=2, departureDate=19.5.2019, cost=10500.0, typeOfFood='breakfast', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48550000, id=48550000, country='egypt', hotelName='maksim_gorky', hotelLevel=3, departureDate=12.1.2019, cost=19000.0, typeOfFood='breakfast_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip12830000, id=12830000, country='belarus', hotelName='hotel_Minsk', hotelLevel=4, departureDate=1.7.2019, cost=5400.0, typeOfFood='breakfast', typeOfTransport='train'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip9510000, id=9510000, country='greece', hotelName='president_hotel', hotelLevel=4, departureDate=22.10.2019, cost=5900.0, typeOfFood='all_in', typeOfTransport='ship'}, diagnosis='cold'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip1610000, id=1610000, country='italy', hotelName='president_hotel', hotelLevel=4, departureDate=25.2.2019, cost=24000.0, typeOfFood='breakfast_lunch_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip20190000, id=20190000, country='belarus', hotelName='bristol', hotelLevel=5, departureDate=1.1.2019, cost=1000.0, typeOfFood='without', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip40010000, id=40010000, country='belarus', hotelName='moscow_city', hotelLevel=5, departureDate=1.1.2020, cost=1000.0, typeOfFood='breakfast', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip49510000, id=49510000, country='russian', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip35090000, id=35090000, country='turkey', hotelName='vega', hotelLevel=5, departureDate=15.11.2019, cost=10000.2, typeOfFood='without', typeOfTransport='plane'}, diagnosis='cold'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:104 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:107 - Repository after REMOVE one: 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip21830000, id=21830000, country='italy', hotelName='bristol', hotelLevel=2, departureDate=12.11.2019, cost=5900.0, typeOfFood='without', typeOfTransport='plane'}, diagnosis='good'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48680000, id=48680000, country='russian', hotelName='moscow_city', hotelLevel=2, departureDate=19.5.2019, cost=10500.0, typeOfFood='breakfast', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip48550000, id=48550000, country='egypt', hotelName='maksim_gorky', hotelLevel=3, departureDate=12.1.2019, cost=19000.0, typeOfFood='breakfast_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip12830000, id=12830000, country='belarus', hotelName='hotel_Minsk', hotelLevel=4, departureDate=1.7.2019, cost=5400.0, typeOfFood='breakfast', typeOfTransport='train'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = HealingTrip9510000, id=9510000, country='greece', hotelName='president_hotel', hotelLevel=4, departureDate=22.10.2019, cost=5900.0, typeOfFood='all_in', typeOfTransport='ship'}, diagnosis='cold'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip1610000, id=1610000, country='italy', hotelName='president_hotel', hotelLevel=4, departureDate=25.2.2019, cost=24000.0, typeOfFood='breakfast_lunch_dinner', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip20190000, id=20190000, country='belarus', hotelName='bristol', hotelLevel=5, departureDate=1.1.2019, cost=1000.0, typeOfFood='without', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip40010000, id=40010000, country='belarus', hotelName='moscow_city', hotelLevel=5, departureDate=1.1.2020, cost=1000.0, typeOfFood='breakfast', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:190 - Trip{Name = RestTrip49510000, id=49510000, country='russian', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:113 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:116 - Repository after UPDATE this: Trip{Name = RestTrip49510000, id=49510000, country='russian', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:120 - Last trip after UPDATE: Trip{Name = RestTrip49510000, id=49510000, country='newCountry', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:123 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:126 - Repository after ADD wrongTrip: 
+2019-06-19 13:53:27 ERROR AgencyWorkSimulator:130 - Method create() received wrong trip type: healing turkey vega 5 15 11 2019 10000.2 without  cold 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:134 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:136 - Specification by COST 1000 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:140 - Trip{Name = RestTrip20190000, id=20190000, country='belarus', hotelName='bristol', hotelLevel=5, departureDate=1.1.2019, cost=1000.0, typeOfFood='without', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:140 - Trip{Name = RestTrip40010000, id=40010000, country='belarus', hotelName='moscow_city', hotelLevel=5, departureDate=1.1.2020, cost=1000.0, typeOfFood='breakfast', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:142 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:145 - Specification by COUNTRY russian 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:149 - Trip{Name = RestTrip48680000, id=48680000, country='russian', hotelName='moscow_city', hotelLevel=2, departureDate=19.5.2019, cost=10500.0, typeOfFood='breakfast', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:151 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:153 - Specification by HOTEL NAME moscow_city 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:157 - Trip{Name = RestTrip48680000, id=48680000, country='russian', hotelName='moscow_city', hotelLevel=2, departureDate=19.5.2019, cost=10500.0, typeOfFood='breakfast', typeOfTransport='plane'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:157 - Trip{Name = RestTrip40010000, id=40010000, country='belarus', hotelName='moscow_city', hotelLevel=5, departureDate=1.1.2020, cost=1000.0, typeOfFood='breakfast', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:157 - Trip{Name = RestTrip49510000, id=49510000, country='newCountry', hotelName='moscow_city', hotelLevel=5, departureDate=5.5.2021, cost=5200.0, typeOfFood='breakfast_dinner', typeOfTransport='bus'}
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:159 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:161 - Specification by ID 5125 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:168 - Repository has no such object with that id 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:171 - 
+
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:174 - Repository after CLEAR: 
+2019-06-19 13:53:27 INFO  AgencyWorkSimulator:176 - repository size: 0
