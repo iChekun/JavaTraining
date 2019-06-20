@@ -9,6 +9,8 @@ import by.epam.javatraining.chekun.maintask02.model.date.Date;
  */
 public class RestTrip extends Trip {
 
+    public RestTrip() {
+    }
 
     public RestTrip(int id, String country, String hotelName, int hotelLevel, Date departureDate,
                     double cost, String typeOfFood, String transportType) {

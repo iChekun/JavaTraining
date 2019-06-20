@@ -1,7 +1,7 @@
 package by.epam.javatraining.chekun.maintask02.model.reposizoty;
 
 import by.epam.javatraining.chekun.maintask02.model.comparator.*;
-import by.epam.javatraining.chekun.maintask02.model.configuration.Configuration;
+import by.epam.javatraining.chekun.maintask02.model.configuration.Configure;
 import by.epam.javatraining.chekun.maintask02.model.date.Date;
 import by.epam.javatraining.chekun.maintask02.model.entity.HealingTrip;
 import by.epam.javatraining.chekun.maintask02.model.entity.RestTrip;
@@ -29,7 +29,7 @@ public class TripsRepositoryTest {
 
     @BeforeClass
     public static void beforeClass() {
-        Configuration.getInstance().configuration();
+        Configure.getInstance().configuration();
         logger.info("TripsRepositoryTest starter!");
     }
 

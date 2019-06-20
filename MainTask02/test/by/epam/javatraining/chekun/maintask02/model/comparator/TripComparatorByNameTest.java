@@ -1,6 +1,6 @@
 package by.epam.javatraining.chekun.maintask02.model.comparator;
 
-import by.epam.javatraining.chekun.maintask02.model.configuration.Configuration;
+import by.epam.javatraining.chekun.maintask02.model.configuration.Configure;
 import by.epam.javatraining.chekun.maintask02.model.date.Date;
 import by.epam.javatraining.chekun.maintask02.model.entity.RestTrip;
 import by.epam.javatraining.chekun.maintask02.model.exception.WrongDateException;
@@ -17,7 +17,7 @@ public class TripComparatorByNameTest {
 
     @BeforeClass
     public static void beforeClass() {
-        Configuration.getInstance().configuration();
+        Configure.getInstance().configuration();
         logger.info("TripComparatorByNameTest started!");
     }
 

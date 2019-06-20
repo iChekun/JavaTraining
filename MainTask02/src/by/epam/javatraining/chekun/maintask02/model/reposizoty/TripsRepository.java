@@ -21,7 +21,6 @@ public class TripsRepository implements Repository {
     }
 
     ////////////////////
-
     private List<Trip> tripList = new ArrayList<>();
 
     @Override

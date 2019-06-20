@@ -1,7 +1,7 @@
 package by.epam.javatraining.chekun.maintask02.model.reader;
 
-import by.epam.javatraining.chekun.maintask02.model.configuration.Configuration;
-import by.epam.javatraining.chekun.maintask02.model.configuration.ConfigurationFileReaderTest;
+import by.epam.javatraining.chekun.maintask02.model.configuration.Configure;
+import by.epam.javatraining.chekun.maintask02.model.configuration.ConfigureFileReaderTest;
 import by.epam.javatraining.chekun.maintask02.model.exception.FileReadingException;
 import by.epam.javatraining.chekun.maintask02.model.exception.NoDataFileException;
 import org.apache.log4j.Logger;
@@ -17,13 +17,13 @@ import static org.junit.Assert.assertEquals;
 
 public class TripFileReaderTest {
 
-    private static Logger logger = Logger.getLogger(ConfigurationFileReaderTest.class);
+    private static Logger logger = Logger.getLogger(ConfigureFileReaderTest.class);
     private TripReader fileReader = TripFileReader.getInstance();
 
 
     @BeforeClass
     public static void beforeClass() {
-        Configuration.getInstance().configuration();
+        Configure.getInstance().configuration();
         logger.info("TripFileReaderTest started!");
     }
 

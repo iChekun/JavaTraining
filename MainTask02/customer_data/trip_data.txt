@@ -7,4 +7,8 @@ rest belarus hotel_Minsk 4 1 7 2019 5400 breakfast train
 rest  egypt vega 3 25 5 2019 5900 breakfast_lunch_dinner plane
 healing greece president_hotel 4 22 10 2019 5900 all_in ship cold
 rest russian moscow_city 5 5 5 2021 5200 breakfast_dinner bus
-healing italy bristol 2 12 11 2019 5900 without plane good
+
+healing italy president_hotel 4 4 10 2019 5400 breakfast ship good
+healing egypt bristol 2 12 11 2019 5900 without plane good
+rest egypt maksim_gorky 3 12 1 2019 19000 breakfast_dinner plane
+rest egypt maksim_gorky 3 12 1 2019 19000 breakfast_dinner plane

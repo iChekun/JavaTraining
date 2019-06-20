@@ -24,10 +24,11 @@ public class TripCreator {
     private static final Logger logger = Logger.getLogger(TripCreator.class);
 
     /**
-     *Creates and returns a Trip in according with parameters given
+     * Creates and returns a Trip in according with parameters given
      * in a string (type country hotelName hotelLevel day month year typeOfFood typeOfTransport
      * if type = healing  will has diagnosis
      * if type = excursion will has countries
+     *
      * @param parameters
      * @return trip with given parameters
      * @throws WrongArgumentsException if parameters are invalid

@@ -1,6 +1,6 @@
 package by.epam.javatraining.chekun.maintask02.model.action;
 
-import by.epam.javatraining.chekun.maintask02.model.configuration.Configuration;
+import by.epam.javatraining.chekun.maintask02.model.configuration.Configure;
 import by.epam.javatraining.chekun.maintask02.model.date.Date;
 import by.epam.javatraining.chekun.maintask02.model.entity.RestTrip;
 import by.epam.javatraining.chekun.maintask02.model.entity.Trip;
@@ -19,7 +19,7 @@ public class TripCreatorTest {
 
     @BeforeClass
     public static void beforeClass() {
-        Configuration.getInstance().configuration();
+        Configure.getInstance().configuration();
         logger.info("TripCreatorTest started!");
     }
 
@@ -30,13 +30,13 @@ public class TripCreatorTest {
     }
 
     @Test(expected = WrongArgumentsException.class)
-    public void create_wrongParameters_exception() throws WrongArgumentsException, WrongDateException {
+    public void create_wrongParameters_exception() throws WrongArgumentsException {
 
         creator.create("belarus minsk 1 2 2019 5");
     }
 
     @Test
-    public void create_correctParameters_exception() throws WrongArgumentsException, WrongDateException {
+    public void create_correctParameters() throws WrongArgumentsException {
 
         Trip expectedTrip = new RestTrip(5, "belarus", "hotel_Minsk",
                 5, new Date(1, 5, 2019), 5700,

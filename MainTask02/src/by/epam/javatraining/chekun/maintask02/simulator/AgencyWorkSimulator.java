@@ -4,6 +4,7 @@ import by.epam.javatraining.chekun.maintask02.model.action.TripCreator;
 import by.epam.javatraining.chekun.maintask02.model.comparator.TripComparatorByCost;
 import by.epam.javatraining.chekun.maintask02.model.comparator.TripComparatorByHotelLevel;
 import by.epam.javatraining.chekun.maintask02.model.configuration.Configuration;
+import by.epam.javatraining.chekun.maintask02.model.configuration.Configure;
 import by.epam.javatraining.chekun.maintask02.model.entity.Trip;
 import by.epam.javatraining.chekun.maintask02.model.exception.FileReadingException;
 import by.epam.javatraining.chekun.maintask02.model.exception.NoDataFileException;
@@ -11,7 +12,7 @@ import by.epam.javatraining.chekun.maintask02.model.exception.WrongArgumentsExce
 import by.epam.javatraining.chekun.maintask02.model.reader.TripFileReader;
 import by.epam.javatraining.chekun.maintask02.model.reader.TripReader;
 import by.epam.javatraining.chekun.maintask02.model.reposizoty.Repository;
-import by.epam.javatraining.chekun.maintask02.model.reposizoty.TripsRepository;
+import by.epam.javatraining.chekun.maintask02.model.reposizoty.TripsRepositoryArray;
 import by.epam.javatraining.chekun.maintask02.model.specification.*;
 import org.apache.log4j.Logger;
 
@@ -32,10 +33,11 @@ public class AgencyWorkSimulator implements WorkSimulator {
 
     private static final Logger logger = Logger.getLogger(AgencyWorkSimulator.class);
 
-    private Configuration configuration = Configuration.getInstance();
+    private Configuration configure = Configure.getInstance();
     private TripReader fileReader = TripFileReader.getInstance();
     private TripCreator creator = TripCreator.getInstance();
-    private Repository repository = TripsRepository.getInstance();
+    //private Repository repository = TripsRepository.getInstance();
+    private Repository repository = TripsRepositoryArray.getInstance();
 
     /**
      * Simulator of work with tourist trips
@@ -45,7 +47,7 @@ public class AgencyWorkSimulator implements WorkSimulator {
      * </p>
      *
      * <p>
-     * Calls {@code configuration } to configuration a system  with values than can be in trip.
+     * Calls {@code configure } to configure a system  with values than can be in trip.
      * Calls {@code read} for reading customer data and get list with trips parameters.
      * Getting {@code list} with parameters.
      * Calls {@code create} for create trip with according parameters in {@code list}
@@ -63,7 +65,8 @@ public class AgencyWorkSimulator implements WorkSimulator {
      */
     @Override
     public void simulateWork() {
-        if (configuration.configuration()) {
+        logger.info("\n\nWITH ARRAY REPOSITORY:\n");
+        if (configure.configuration()) {
             try {
                 List<String> initialValues = fileReader.read("./customer_data/trip_data.txt");
                 {
@@ -76,6 +79,8 @@ public class AgencyWorkSimulator implements WorkSimulator {
                         }
                     });
                 }
+                System.out.println(repository.getLastTrip());
+                System.out.println(repository.getTrips());
                 {
                     logger.info("Save repository");
                     saveInfo();

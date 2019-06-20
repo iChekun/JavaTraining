@@ -15,6 +15,9 @@ public class ExcursionTrip extends Trip {
 
     private String places;
 
+    public ExcursionTrip() {
+    }
+
     public ExcursionTrip(int id, String country, String hotelName, int hotelLevel, Date departureDate,
                          double cost, String typeOfFood, String transportType, String places) {
         super(id, country, hotelName, hotelLevel, departureDate, cost, typeOfFood, transportType);

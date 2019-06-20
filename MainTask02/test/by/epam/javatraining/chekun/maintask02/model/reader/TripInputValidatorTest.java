@@ -1,7 +1,7 @@
 package by.epam.javatraining.chekun.maintask02.model.reader;
 
 import by.epam.javatraining.chekun.maintask02.model.action.TripCreatorTest;
-import by.epam.javatraining.chekun.maintask02.model.configuration.Configuration;
+import by.epam.javatraining.chekun.maintask02.model.configuration.Configure;
 import org.apache.log4j.Logger;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -19,8 +19,8 @@ public class TripInputValidatorTest {
 
     @BeforeClass
     public static void beforeClass() {
-        Configuration.getInstance().configuration();
-        System.out.println(Arrays.toString(Configuration.countries.toArray()));
+        Configure.getInstance().configuration();
+        System.out.println(Arrays.toString(Configure.countries.toArray()));
         logger.info("TripInputValidatorTest started!");
     }
 

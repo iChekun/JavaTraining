@@ -29,8 +29,12 @@ public abstract class Trip {
     private String typeOfTransport;
 
     ///////////////////////////////////
-    public Trip(int id, String country, String hotelName, int hotelLevel, Date departureDate,
-                double cost, String typeOfFood, String typeOfTransport) {
+    protected Trip() {
+    }
+
+
+    protected Trip(int id, String country, String hotelName, int hotelLevel, Date departureDate,
+                   double cost, String typeOfFood, String typeOfTransport) {
         this.id = id;
         this.country = country;
         this.hotelName = hotelName;
@@ -39,7 +43,6 @@ public abstract class Trip {
         this.cost = cost;
         this.typeOfFood = typeOfFood;
         this.typeOfTransport = typeOfTransport;
-
     }
 
     //////////////////////
@@ -110,10 +113,6 @@ public abstract class Trip {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     @Override

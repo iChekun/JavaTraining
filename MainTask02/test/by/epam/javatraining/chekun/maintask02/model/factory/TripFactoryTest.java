@@ -1,6 +1,6 @@
 package by.epam.javatraining.chekun.maintask02.model.factory;
 
-import by.epam.javatraining.chekun.maintask02.model.configuration.Configuration;
+import by.epam.javatraining.chekun.maintask02.model.configuration.Configure;
 import by.epam.javatraining.chekun.maintask02.model.date.Date;
 import by.epam.javatraining.chekun.maintask02.model.entity.ExcursionTrip;
 import by.epam.javatraining.chekun.maintask02.model.entity.HealingTrip;
@@ -22,7 +22,7 @@ public class TripFactoryTest {
 
     @BeforeClass
     public static void beforeClass() {
-        Configuration.getInstance().configuration();
+        Configure.getInstance().configuration();
         logger.info("TripFactoryTest starter!");
     }
 

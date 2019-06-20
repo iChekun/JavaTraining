@@ -18,10 +18,12 @@ public class HealingTrip extends Trip {
 
     private String diagnosis;
 
+    public HealingTrip() {
+    }
+
     public HealingTrip(int id, String country, String hotelName, int hotelLevel, Date departureDate,
                        double cost, String typeOfFood, String transportType, String diagnosis) {
         super(id, country, hotelName, hotelLevel, departureDate, cost, typeOfFood, transportType);
-
         this.name = "HealingTrip" + id;
         this.diagnosis = diagnosis;
     }

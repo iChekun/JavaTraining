@@ -5,7 +5,8 @@ import by.epam.javatraining.chekun.maintask02.model.entity.TripTypes;
 
 import java.util.Arrays;
 
-import static by.epam.javatraining.chekun.maintask02.model.configuration.Configuration.*;
+import static by.epam.javatraining.chekun.maintask02.model.configuration.Configure.*;
+
 
 public class TripInputValidator {
 
